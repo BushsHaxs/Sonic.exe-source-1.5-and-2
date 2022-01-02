@@ -7,7 +7,6 @@ import flixel.util.FlxColor;
 import openfl.media.Video;
 import openfl.net.NetConnection;
 import openfl.net.NetStream;
-import vlc.VlcBitmap;
 
 // THIS IS FOR TESTING
 // DONT STEAL MY CODE >:(

@@ -46,8 +46,9 @@ class SoundTestMenu extends MusicBeatState
 	
 
     override function create()
-        {
-			DiscordClient.changePresence('In the Sound Test Menu', null);
+        {   #if windows 
+			DiscordClient.changePresence('In the Sound Test Menu', null); 
+			#end 
 
 			new FlxTimer().start(0.1, function(tmr:FlxTimer)
 				{
@@ -345,7 +346,7 @@ class SoundTestMenu extends MusicBeatState
 			}
 		else if (first == 23 && second == 23) 
 			{
-				var video:MP4Handler = new MP4Handler();
+				
 				woahmanstopspammin = false;
 				flashyWashy(true);
 				new FlxTimer().start(2, function(tmr:FlxTimer)
@@ -356,13 +357,13 @@ class SoundTestMenu extends MusicBeatState
 				});
 				new FlxTimer().start(2.1, function(tmr:FlxTimer)
 				{
-                	video.playMP4(Paths.video('Keel'));
+                	
 					incameo = true;
 				});
 			}
 		else if (first == 12 && second == 34) 
 			{
-				var video:MP4Handler = new MP4Handler();
+				
 				woahmanstopspammin = false;
 				flashyWashy(true);
 				new FlxTimer().start(2, function(tmr:FlxTimer)
@@ -373,7 +374,7 @@ class SoundTestMenu extends MusicBeatState
 				});
 				new FlxTimer().start(2.1, function(tmr:FlxTimer)
 				{
-                	video.playMP4(Paths.video('Milky'));
+                	
 					incameo = true;
 				});
 			}
