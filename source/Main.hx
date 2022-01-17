@@ -105,7 +105,6 @@ class Main extends Sprite
 		#end
 
 
-		
 		#if !mobile
 		fpsCounter = new FPS(10, 3, 0xFFFFFF);
 		addChild(fpsCounter);
